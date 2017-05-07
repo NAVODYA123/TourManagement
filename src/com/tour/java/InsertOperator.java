@@ -23,8 +23,10 @@ public class InsertOperator {
 
 
         try {
+
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tour?autoReconnect=true&useSSL=false", "root", "");
+
 
 
             querySetData = "INSERT INTO operator (opr_salary, opr_name, opr_email, opr_date_of_birth, opr_password, opr_access_level)" +

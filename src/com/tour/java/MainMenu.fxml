@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tour.java.MainMenuController">
    <bottom>
       <HBox BorderPane.alignment="CENTER">
          <children>
@@ -26,8 +25,8 @@
          <children>
             <Label fx:id="userNameLabel" prefHeight="27.0" prefWidth="232.0" text="User Name " />
             <Region prefHeight="27.0" prefWidth="219.0" HBox.hgrow="ALWAYS" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Sign Out" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Exit" />
+            <Button fx:id="signOutBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Sign Out" />
+            <Button fx:id="exitBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Exit" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -37,13 +36,13 @@
    <center>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="Add new Customer " />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="Add New Tour" />
-            <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List Of Booked Tours" />
-            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="LSee the List of Vehicle" />
-            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List of Destination " />
-            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List Of Guides " />
-            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="Admin Function " />
+            <Button fx:id="addNewCustomerBTN" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="Add new Customer " />
+            <Button fx:id="addNewTourBTN" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="Add New Tour" />
+            <Button fx:id="listOfTourBTN" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List Of Booked Tours" />
+            <Button fx:id="listOfVehicleBTN" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List of Vehicle" />
+            <Button fx:id="listOfDestinationBTN" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List of Destination " />
+            <Button fx:id="listOfGuideBTN" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="List Of Guides " />
+            <Button fx:id="adminFunctionBTN" mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="Admin Function " />
          </children>
          <padding>
             <Insets bottom="20.0" top="20.0" />
