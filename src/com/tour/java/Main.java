@@ -13,13 +13,16 @@ import static javafx.application.Application.launch;
 
 public class Main extends Application{
     public static void main(String[] args) {launch(args);}
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("LoginForm.fxml"));
-        primaryStage.setTitle("Tour Management Login");
+        primaryStage.setTitle("GMAL Login");
         primaryStage.getIcons().add(new Image("com/tour/java/Icons/ApplicationImage.png"));
         primaryStage.setScene(new Scene(root,342,221));
         primaryStage.show();
+
+
     }
 }
 

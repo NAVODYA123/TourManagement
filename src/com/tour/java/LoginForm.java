@@ -60,9 +60,9 @@ public class LoginForm extends Main {
     public void handle() {
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("com/tour/java/InsertOperator.fxml"));
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("com/tour/java/MainMenu.fxml"));
             Stage stage = new Stage();
-            stage.setTitle("Insert New Operator");
+            stage.setTitle("Main Menu");
             stage.getIcons().add(new Image("com/tour/java/Icons/ApplicationImage.png"));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root, 600, 450));
