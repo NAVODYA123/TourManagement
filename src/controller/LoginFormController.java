@@ -31,8 +31,11 @@ public class LoginFormController {
         String pwd = passwordText.getText();
         LoginValidation login = new LoginValidation();
         String resultLogin=login.userValidation(uid,pwd);
-        System.out.println(resultLogin);
+
         remarkLabel.setText(resultLogin);
+        if(resultLogin.equals("ValidLogin")){
+            System.out.println("Open Next Form ");
+        }
     }
 
 

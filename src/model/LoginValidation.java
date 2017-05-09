@@ -49,7 +49,7 @@ public class LoginValidation {
                                 updateLockCount.executeUpdate();
 
                                 String rtn = Integer.toString(3 - dbLockCount);
-                                return rtn + "Login Attempts Remaining";
+                                return "You have " +rtn + " Login Attempts Remaining";
                             } else {
                                 String updateUIDLock = "UPDATE  operator SET uid_lock=1 WHERE operator_id=?;";
                                 PreparedStatement updateLockCount = con.prepareStatement(updateUIDLock);
