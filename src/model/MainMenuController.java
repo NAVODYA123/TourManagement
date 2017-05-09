@@ -1,4 +1,4 @@
-package com.tour.java;
+package model;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -47,11 +47,11 @@ public class MainMenuController {
     void handleInsertTourBTN(ActionEvent event) {
         try{
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InsertTour.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/InsertTour.fxml"));
             Parent root1 = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Add New Tour");
-            stage.getIcons().add(new Image("com/tour/java/Icons/ApplicationImage.png"));
+            stage.getIcons().add(new Image("view/Icons/ApplicationImage.png"));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root1));
             stage.show();

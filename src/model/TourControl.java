@@ -1,4 +1,4 @@
-package com.tour.java;
+package model;
 
 
 import javafx.fxml.FXML;

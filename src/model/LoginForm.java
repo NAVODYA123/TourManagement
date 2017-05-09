@@ -1,9 +1,7 @@
-package com.tour.java;
+/*package model;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+import controller.Main;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,16 +12,14 @@ import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import javax.xml.soap.Text;
 import java.io.IOException;
-import java.sql.PreparedStatement;
 
 
 /**
  * Created by Gayan Kalinga on 07-May-17.
  */
 
-public class LoginForm extends Main {
+/*public class LoginForm extends Main {
 
     public PasswordField passwordField;
     public TextField userIDTextField;
@@ -60,10 +56,10 @@ public class LoginForm extends Main {
     public void handle() {
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("com/tour/java/MainMenu.fxml"));
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("../view/MainMenu.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Main Menu");
-            stage.getIcons().add(new Image("com/tour/java/Icons/ApplicationImage.png"));
+            stage.getIcons().add(new Image("view/Icons/ApplicationImage.png"));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
@@ -77,3 +73,4 @@ public class LoginForm extends Main {
 
 
 
+*/

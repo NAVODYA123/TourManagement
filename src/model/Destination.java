@@ -1,4 +1,4 @@
-package com.tour.java;
+package model;
 
 /**
  * Created by Gayan Kalinga on 06-May-17.

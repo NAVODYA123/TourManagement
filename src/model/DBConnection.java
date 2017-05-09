@@ -1,4 +1,4 @@
-package com.tour.java;
+package model;
 
 import com.mysql.jdbc.*;
 
@@ -17,13 +17,9 @@ public class DBConnection{
         }
 
     }
-    
-    public void checkTheDBAvailability (){
-        dbConnection();
-
-
-    }
 }
+    
+
 
 
 
