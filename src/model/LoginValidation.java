@@ -10,16 +10,20 @@ package model;
 import java.sql.*;
 
 
+
 public class LoginValidation {
 
     public String userValidation(String userID, String userPassword) {
         String dbUserID,dbPassword,queryGetData;
         int dbLockCount,dbUidLock;
         System.out.println(userID);
+        Connection con;
 
         try {
 
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tour?autoReconnect=true&useSSL=false", "root", "");
+            //Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tour?autoReconnect=true&useSSL=false", "root", "");
+            con=DBConnect.dbConnection();
+
             Statement getStmt = con.createStatement();
             queryGetData = "SELECT operator_id,uid_lock,opr_password,lock_count FROM operator;";
             getStmt.executeQuery(queryGetData);
