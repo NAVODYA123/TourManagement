@@ -71,6 +71,7 @@ public class Main extends Application{
         }
     }
 
+    //Open Destinations Window
     public void destinationWindow(){
         try{
 
@@ -80,7 +81,9 @@ public class Main extends Application{
             DestinationController destinationController = destinationLoader.getController();
             Scene destinationScene = new Scene(destinationPain);
             Stage secondaryStage = new Stage();
-            destinationController.setDesignationView(this,secondaryStage);
+
+            destinationController.setDestinationView(this);
+
             secondaryStage.initOwner(primaryStage);
             secondaryStage.initModality(Modality.APPLICATION_MODAL);
             secondaryStage.setTitle("Destinations");

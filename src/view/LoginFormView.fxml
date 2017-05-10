@@ -31,7 +31,7 @@
             <TextField fx:id="passwordText" prefHeight="31.0" prefWidth="390.0" promptText="password" />
          </children>
       </HBox>
-      <Label fx:id="remarkLabel" alignment="CENTER" layoutX="5.0" layoutY="245.0" text="Any Remarks" textFill="#d30909" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="-5.0" />
+      <Label fx:id="remarkLabel" alignment="CENTER" layoutX="5.0" layoutY="245.0" text="Please Sign in" textFill="#d30909" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="-5.0" />
       <HBox alignment="CENTER" layoutX="200.0" layoutY="266.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="265.0">
          <children>
             <Button fx:id="loginButton" mnemonicParsing="false" onAction="#validateLogin" prefHeight="49.0" prefWidth="165.0" text="Log In" />

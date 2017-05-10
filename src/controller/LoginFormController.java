@@ -50,7 +50,7 @@ public class LoginFormController {
 
         remarkLabel.setText(resultLogin);
         if(resultLogin.equals("ValidLogin")){
-            System.out.println("Open Next Form ");
+            //System.out.println("Open Next Form ");
             changeWindow();
         }
     }
