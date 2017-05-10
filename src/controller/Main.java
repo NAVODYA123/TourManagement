@@ -15,13 +15,16 @@ public class Main extends Application{
 
     private Stage primaryStage;
 
+    public static void main(String[] args) {launch(args);}
+
     @Override
     public void start(Stage primaryStage){
         this.primaryStage=primaryStage;
-        mainWindow();
+        loginWindow();
     }
 
-    public void mainWindow(){
+    //Open Login Form when the System Lords
+    public void loginWindow(){
         try{
 
                 //Instantiate FXML Loader  and give the View file path
@@ -46,8 +49,28 @@ public class Main extends Application{
         }
     }
 
+    //Open Main Window inside the Primary Stage
+    public void mainWindow(){
 
-    public static void main(String[] args) {launch(args);}
+        try {
+
+            FXMLLoader mainWindowLoader = new FXMLLoader(Main.class.getResource("/view/MainMenu.fxml"));
+            AnchorPane mainMenuPane = mainWindowLoader.load();
+            Scene mainScene = new Scene(mainMenuPane);
+            MainMenuController openMainMenu = mainWindowLoader.getController();
+            openMainMenu.setMain(this);
+            primaryStage.setScene(mainScene);
+            primaryStage.getIcons().add(new Image("/view/Icons/tourIcon.png"));
+            primaryStage.setTitle("Main Menu");
+            primaryStage.show();
+
+        }catch (Exception e){
+            System.out.println(e);
+            e.printStackTrace();
+        }
+    }
+
+
 }
 
 

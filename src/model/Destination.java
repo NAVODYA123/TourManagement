@@ -4,6 +4,7 @@ package model;
  * Created by Gayan Kalinga on 06-May-17.
  */
 public class Destination {
+
     private int cityCode;
     private String cityName;
     private float pricePerDay;
@@ -17,13 +18,15 @@ public class Destination {
     }
 
     //Mutator Methods
+    public int getCityCode(){return cityCode;}
+    public String getCityName(){return cityName;}
+    public float getPricePerDay(){return pricePerDay;}
+    public int getMinDays(){return minDays;}
 
 
     //Accessor Methods
-    void setCityName(String varCN){this.cityName =varCN;}
-
-    void setPricePerDay(float varPPD){this.pricePerDay=varPPD;}
-
-    void setMinDays(int varMIND){this.minDays=varMIND;}
+    public void setCityName(String varCN){this.cityName =varCN;}
+    public void setPricePerDay(float varPPD){this.pricePerDay=varPPD;}
+    public void setMinDays(int varMIND){this.minDays=varMIND;}
 
 }
