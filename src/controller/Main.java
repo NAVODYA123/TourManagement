@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -49,7 +50,7 @@ public class Main extends Application{
         }
     }
 
-    //Open Main Window inside the Primary Stage
+    //Open Main Window inside the Primary Stage when the login completes
     public void mainWindow(){
 
         try {
@@ -67,6 +68,31 @@ public class Main extends Application{
         }catch (Exception e){
             System.out.println(e);
             e.printStackTrace();
+        }
+    }
+
+    public void destinationWindow(){
+        try{
+
+            FXMLLoader destinationLoader = new FXMLLoader(Main.class.getResource("/view/DestinationView.fxml"));
+            AnchorPane destinationPain = destinationLoader.load();
+
+            DestinationController destinationController = destinationLoader.getController();
+            Scene destinationScene = new Scene(destinationPain);
+            Stage secondaryStage = new Stage();
+            destinationController.setDesignationView(this,secondaryStage);
+            secondaryStage.initOwner(primaryStage);
+            secondaryStage.initModality(Modality.APPLICATION_MODAL);
+            secondaryStage.setTitle("Destinations");
+            secondaryStage.getIcons().add(new Image("/view/Icons/tourIcon.png"));
+            secondaryStage.setScene(destinationScene);
+            secondaryStage.show();
+
+
+
+        }catch(Exception e){
+            e.printStackTrace();
+            System.out.println(e);
         }
     }
 

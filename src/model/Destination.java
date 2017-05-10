@@ -11,7 +11,8 @@ public class Destination {
     private int minDays;
 
     //Destination Constructor
-    Destination(String cn, float ppd, int mind){
+    public Destination(int cCode,String cn, float ppd, int mind){
+        cityCode=cCode;
         cityName=cn;
         pricePerDay=ppd;
         minDays=mind;
